@@ -1,7 +1,7 @@
 positions = []
 coords_pos = {}
 
-SZ = 1
+SZ = 2
 
 for i in range(-SZ, SZ+1):
 	for j in range(-SZ, SZ+1):
