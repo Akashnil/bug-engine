@@ -248,8 +248,9 @@ def evaluate_position(position):
 		child_vals.append((val, p))
 	best_val = get_best_val(child_vals, player)
 	value_dict[hash_canon] = best_val if player == 1 else -best_val
-	print (str_board(position, child_vals))
-	print (len(value_dict))
+	if len(value_dict) % 10000 == 0:
+		print (str_board(position, child_vals))
+		print (len(value_dict))
 	if len(value_dict) % 10000000 == 0:
 		write_dict()
 	return best_val
