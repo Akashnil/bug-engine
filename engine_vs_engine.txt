@@ -1,4 +1,4 @@
-Current Player:  O Position Value:25
+Current Player:[O] Position Value:25
             -23
        24          24
 -23         -23         -23
@@ -8,323 +8,303 @@ Current Player:  O Position Value:25
 -23         -23         -23
        24          24
             -23
-Current Player:  X Position Value:24
-             20
-       21           O
- 23          20          20
-       21          20
- 21          19          21
+Current Player:[X] Position Value:24
+             21
        21          21
  21          21          23
        21          21
-             21
-Current Player:  O Position Value:23
-              -
-      -18           O
-  X           -           -
-      -18           -
--18         -17          26
-       26         -21
--21         -25         -19
-      -19         -23
-             22
-Current Player:  X Position Value:22
-             18
-        -           O
-  X          18          18
-        -          18
-  -          19          21
-       17          19
- 19          18          19
-       18          18
-              O
-Current Player:  O Position Value:21
-              -
-      -16           O
-  X           -           -
-      -16           -
--16         -13           X
-       20         -16
- 22           -         -16
-        -           -
-              O
-Current Player:  X Position Value:20
-             16
-        -           O
-  X          16           -
-        -           -
-  -          14           X
-        O           -
- 18          16           -
-       16          20
-              O
-Current Player:  X Position Value:20
-              -
-        -           O
-  X           -           -
-        -           -
-  -           -           X
-        O           -
-  -          19           -
-        -           +
+ 21          19          21
+       21          20
+ 23          20          20
+       21         [O]
+             20
+Current Player:[O] Position Value:23
+            -21
+      -19         -18
+ 22          26         [X]
+      -25         -18
+-23         -17         -18
+      -21          -
+-19          -           -
+       26         [O]
+             -
+Current Player:[X] Position Value:22
              19
-Current Player:  O Position Value:19
-            -15
-       19           O
-  X         -15          18
-      -15         -15
--13         -13           X
-        O         -14
- 18         -14         -14
-      -20           X
-              X
-Current Player:  X Position Value:18
-             12
-       15           O
-  X          12          17
-       12          15
- 12          11           X
-        O           -
-  O           -           -
-        -           X
-              X
-Current Player:  O Position Value:17
-            -12
-       -4           O
-  X         -12           X
-        -         -10
-  -           -           X
-        O         -13
-  O           -          16
-        -           X
-              X
-Current Player:  X Position Value:16
+       18          -
+[O]          17         [X]
+       18          -
+ 18          19          -
+       19          18
+ 19          18          18
+       21         [O]
+             18
+Current Player:[O] Position Value:21
+             22
+       -          -16
+[O]          20         [X]
+       -          -16
+ -          -13         -16
+      -16          -
+-16          -           -
+      [X]         [O]
+             -
+Current Player:[X] Position Value:20
+             18
+       16          -
+[O]         [O]         [X]
+       16          -
+ 20          14          -
+       -           16
+ -           -           16
+      [X]         [O]
+             -
+Current Player:[X] Position Value:20
+             -
+       -           -
+ 19         [O]         [X]
+       19          -
+[+]          -           -
+       -           -
+ -           -           -
+      [X]         [O]
+             -
+Current Player:[O] Position Value:19
+             18
+      -20         -13
+[X]         [O]         [X]
+      -14         -15
+[X]         -13          19
+      -14         -15
+-14         -15         -15
+      [X]         [O]
+             18
+Current Player:[X] Position Value:18
+            [O]
+       -           12
+[X]         [O]         [X]
+       -           12
+[X]          11          15
+       -           12
+ -           15          12
+      [X]         [O]
+             17
+Current Player:[O] Position Value:17
+            [O]
+       -           -
+[X]         [O]         [X]
+       -           -
+[X]          -           -4
+      -13         -12
+ 16         -10         -12
+      [X]         [O]
+            [X]
+Current Player:[X] Position Value:16
+            [O]
+       -           10
+[X]         [O]         [X]
+       -           10
+[X]           7          15
+       -           10
+[O]          -            8
+      [X]         [O]
+            [X]
+Current Player:[O] Position Value:15
+            [O]
+       -           -
+[X]         [O]         [X]
+       -           -
+[X]          -          [X]
+      -12          17
+[O]          15          15
+      [X]         [O]
+            [X]
+Current Player:[O] Position Value:15
+            [O]
+       -           -
+[X]         [O]          -
+       -           -
+[X]          -           -9
+       -          -11
+[O]          14         [+]
+       -          [+]
+            -11
+Current Player:[X] Position Value:14
+            [O]
+        5          11
+[X]         [O]          11
+        5          11
+[X]           5          13
+       12          13
+[O]         [O]         [O]
+       12         [O]
+             13
+Current Player:[O] Position Value:13
+            [O]
+       -7         -13
+[X]         [O]          -7
+       -3          12
+[X]          -           -
+       -           -
+[O]         [O]         [O]
+       -          [O]
+            [X]
+Current Player:[X] Position Value:12
+            [O]
+       12           1
+[X]         [O]           1
+        1         [O]
+[X]           1           1
+        8           1
+[O]         [O]         [O]
+        1         [O]
+            [X]
+Current Player:[X] Position Value:12
+              9
+      [+]          -
+[+]           9          -
+       11          -
+[+]          -           -
+        9          -
+[O]         [O]         [O]
+       -          [O]
+            [X]
+Current Player:[O] Position Value:11
+             14
+      [X]          -9
+[X]          -9          -9
+      [X]          10
+[X]          -9          -7
+       -           12
+[O]         [O]         [O]
+       -          [O]
+            [X]
+Current Player:[X] Position Value:10
+             -
+      [X]           8
+[X]          -           10
+      [X]         [O]
+[X]          -           10
+       -            8
+[O]         [O]         [O]
+        7         [O]
+            [X]
+Current Player:[X] Position Value:10
+             -
+      [X]          -
+[X]          -            9
+      [X]           7
+[X]          -          [+]
+       -            7
+[O]         [O]         [O]
+       -          [O]
+            [X]
+Current Player:[O] Position Value:9
               8
-       15           O
-  X          10           X
-       10           -
- 10           7           X
-        O           -
-  O           -           O
-        -           X
-              X
-Current Player:  O Position Value:15
-             15
-        X           O
-  X          17           X
-        -          15
-  -           -           X
-        O         -12
-  O           -           O
-        -           X
-              X
-Current Player:  O Position Value:15
-              +
-       -9           +
-  -         -11         -11
-        -          14
-  -           -           -
-        O           -
-  O           -           O
-        -           X
-              X
-Current Player:  X Position Value:14
-              O
-       13           O
- 11          13          13
-       11           O
- 11           5          12
-        O          12
-  O           5           O
-        5           X
-              X
-Current Player:  O Position Value:13
-              O
-        X           O
- -3           -           -
-       12           O
- 12           -           -
-        O           -
-  O         -13           O
-       -5           X
-              X
-Current Player:  X Position Value:12
-              O
-        X           O
-  1           1           1
-        1           O
-  O           1          10
-        O          12
-  O          10           O
-        1           X
-              X
-Current Player:  X Position Value:12
-              -
-        X           -
-  -           -           -
-        -           7
-  O           7           9
-        O           +
-  O          11           O
-        9           +
-              +
-Current Player:  O Position Value:11
-             11
-        X          12
- -9          11          14
-      -14          12
-  O          -9         -17
-        O           X
-  O           X           O
-      -12           X
-              X
-Current Player:  O Position Value:11
-             10
-       12         -17
-  -           +           -
-        -          12
-  O           -           -
-        O           X
-  O           X           O
-        -           X
-              X
-Current Player:  X Position Value:10
-              O
-        7           9
-  9           O           9
-        9           -
-  O           -           -
-        O           X
-  O           X           O
-        -           X
-              X
-Current Player:  O Position Value:9
-              O
-        8          10
- -7           O          -3
-        X          10
-  O           -          -7
-        O           X
-  O           X           O
-      -10           X
-              X
-Current Player:  X Position Value:8
-              O
-        O           7
-  7           O           7
-        X           -
-  O           -           -
-        O           X
-  O           X           O
-        -           X
-              X
-Current Player:  O Position Value:7
-              O
-        O           6
-  -           O           X
-        X           8
-  O           -          -9
-        O           X
-  O           X           O
-        7           X
-              X
-Current Player:  X Position Value:6
-              O
-        O           O
-  5           O           X
-        X           -
-  O           -           -
-        O           X
-  O           X           O
-        -           X
-              X
-Current Player:  O Position Value:5
-              O
-        O           O
-  X           O           X
-        X           -
-  O           -          -1
-        O           X
-  O           X           O
-        5           X
-              X
-Current Player:  O Position Value:5
-              O
-        O           O
-  X           O           X
-        X           -
-  +           -           -
-        +           -
-  +          14           O
-        +           -
-              4
-Current Player:  X Position Value:4
-              O
-        O           O
-  X           O           X
-        X           3
-  O           3           3
-        O           4
-  O           3           O
-        O           4
-              O
-Current Player:  X Position Value:4
-              O
-        O           O
-  X           O           X
-        X           -
-  O           -           -
-        O           +
-  O           3           3
-        O           3
-              O
-Current Player:  O Position Value:3
-              O
-        O           O
-  X           O           X
-        X          -3
-  O           -           3
-        O           X
-  O           X          -3
-        O           -
-              O
-Current Player:  O Position Value:3
-              O
-        O           O
-  X           O           -
-        X           -
-  O           -           +
-        O           X
-  O           X           3
-        O           -
-              O
-Current Player:  O Position Value:3
-              O
-        O           O
-  X           O           -
-        X           -
-  O           -           +
-        O           2
-  O           -           +
-        O           -
-              O
-Current Player:  X Position Value:2
-              O
-        O           O
-  X           O           1
-        X           1
-  O           1           O
-        O           O
-  O           1           O
-        O           1
-              O
-Current Player:  O Position Value:1
-              O
-        O           O
-  X           O           X
-        X           -
-  O           -           O
-        O           O
-  O           -           O
-        O           -
-              O
+      [X]           8
+[X]          16         [X]
+      [X]           8
+[X]          10         [X]
+       -           -9
+[O]         [O]         [O]
+       -          [O]
+            [X]
+Current Player:[X] Position Value:8
+             -
+      [X]         [O]
+[X]          -          [X]
+      [X]           5
+[X]          -          [X]
+       -            8
+[O]         [O]         [O]
+        5         [O]
+            [X]
+Current Player:[X] Position Value:8
+             -
+      [X]         [O]
+[X]          -          [+]
+      [X]           7
+[X]          -          [+]
+       -          [+]
+[O]          -            7
+       -           -
+            [X]
+Current Player:[O] Position Value:7
+              6
+      [X]         [O]
+[X]          14         [X]
+      [X]           8
+[X]         -11         [X]
+        6         [X]
+[O]           9         [X]
+       -1           9
+            [X]
+Current Player:[X] Position Value:6
+            [O]
+      [X]         [O]
+[X]          -          [X]
+      [X]          -
+[X]          -          [X]
+       -          [X]
+[O]          -          [X]
+        5          -
+            [X]
+Current Player:[O] Position Value:5
+            [O]
+      [X]         [O]
+[X]          -1         [X]
+      [X]          -1
+[X]          -1         [X]
+        5         [X]
+[O]          -1         [X]
+      [X]          -1
+            [X]
+Current Player:[O] Position Value:5
+            [O]
+      [X]         [O]
+[X]          -          [X]
+      [X]          -
+[X]           4         [X]
+      [+]         [X]
+[+]           6         [X]
+        6          -
+             -
+Current Player:[X] Position Value:4
+            [O]
+      [X]         [O]
+[X]          -          [X]
+      [X]          -
+[X]         [O]         [X]
+      [O]         [X]
+[O]          -          [X]
+        3          -
+              3
+Current Player:[O] Position Value:3
+            [O]
+      [X]         [O]
+[X]          -          [X]
+      [X]          -
+[X]         [O]         [X]
+      [O]         [X]
+[O]           5         [X]
+      [X]           2
+              3
+Current Player:[X] Position Value:2
+            [O]
+      [X]         [O]
+[X]          -          [X]
+      [X]          -
+[X]         [O]         [X]
+      [O]         [X]
+[O]          -          [X]
+      [X]         [O]
+              1
+Current Player:[O] Position Value:1
+            [O]
+      [X]         [O]
+[X]          -          [X]
+      [X]          -
+[X]         [O]         [X]
+      [O]         [X]
+[O]          -          [X]
+      [X]         [O]
+            [X]

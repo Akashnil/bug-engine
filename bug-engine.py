@@ -25,7 +25,7 @@ for i in range(-SZ, SZ+1):
 					neighbors[first].append(second)
 
 # board is a tuple: player#, tiles: 0 (empty), 1 (p1), 2 (p2), -1 (growing)
-tiles = {-1: '  +', 0: '  -', 1: '  O', 2: '  X'}
+tiles = {-1: '[+]', 0: ' - ', 1: '[O]', 2: '[X]'}
 
 def str_board(position, values = [], my_value = None):
 	player, board = position
