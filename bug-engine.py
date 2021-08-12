@@ -25,24 +25,32 @@ for i in range(-SZ, SZ+1):
 					neighbors[first].append(second)
 
 # board is a tuple: player#, tiles: 0 (empty), 1 (p1), 2 (p2), -1 (growing)
-tiles = {-1: '[+]', 0: ' - ', 1: '[O]', 2: '[X]'}
+tiles = {-1: '[+]', 0: ' : ', 1: '[O]', 2: '[X]'}
 
-def str_board(position, values = [], my_value = None):
+def get_disp_coords(p):
+	i, j, k = positions[p]
+	u = (i + SZ) * 2 + 1
+	v = j - k + 2 * SZ
+	return u, v
+
+def str_board(position, values = [], my_value = None, my_position = None):
 	player, board = position
 	# a sequence of tiles
-	grid = [['   ' for i in range(SZ*4+2)] for j in range(SZ*4+1)]
+	grid = [['   ' for i in range(SZ*4+4)] for j in range(SZ*4+1)]
 	for p in range(N):
-		i, j, k = positions[p]
-		u = (i+SZ)*2
-		v = j-k+2*SZ
+		u, v = get_disp_coords(p)
 		grid[v][u] = tiles[board[p]]
 	for x, p in values:
-		i, j, k = positions[p]
-		u = (i+SZ)*2
-		v = j-k+2*SZ
-		grid[v][u] = str(x).rjust(3)
+		u, v = get_disp_coords(p)
+		grid[v][u] = ('+' if x >= 0 else '-') + str(abs(x)).rjust(2)
+	if my_position is not None:
+		u, v = get_disp_coords(my_position)
+		assert (grid[v][u - 1] == '   ')
+		assert (grid[v][u + 1] == '   ')
+		grid[v][u - 1] = '  ('
+		grid[v][u + 1] = ')  '
 
-	header = 'Current Player:' + tiles[player] + (' Position Value:' + str(my_value) if my_value is not None else '')
+	header = 'Current Player: ' + tiles[player] + (' Position Value: ' + str(my_value) if my_value is not None else '')
 	
 	return '\n'.join([header] + [''.join(x) for x in grid])
 
@@ -265,19 +273,23 @@ def simulate(position, p1_god = True, p2_god = True):
 	child_vals = []
 	for p, pos in childs:
 		child_vals.append((evaluate_position(pos), p))
-	print (str_board(position, child_vals, evaluate_position(position)))
 	if not child_vals:
+		print(str_board(position, child_vals, evaluate_position(position)))
 		return
 	is_god = p1_god if player == 1 else p2_god
+	move = -1
 	if not is_god:
-		simulate(random.choice(childs)[1], p1_god, p2_god)
+		move = random.choice([x[1] for x in child_vals])
 	else:
 		best_val = get_best_val(child_vals, player)
 		best_moves = [x[1] for x in child_vals if x[0] == best_val]
 		move = random.choice(best_moves)
-		for p, pos in childs:
-			if p == move:
-				simulate(pos, p1_god, p2_god)
+	assert (move >= 0)
+	print(str_board(position, child_vals, evaluate_position(position), move))
+	for p, pos in childs:
+		if p == move:
+			simulate(pos, p1_god, p2_god)
+			return
 
 print(evaluate_position((1, [0]*N)))
 
