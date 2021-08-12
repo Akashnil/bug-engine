@@ -27,7 +27,7 @@ for i in range(-SZ, SZ+1):
 # board is a tuple: player#, tiles: 0 (empty), 1 (p1), 2 (p2), -1 (growing)
 tiles = {-1: '  +', 0: '  -', 1: '  O', 2: '  X'}
 
-def str_board(position, values = []):
+def str_board(position, values = [], my_value = None):
 	player, board = position
 	# a sequence of tiles
 	grid = [['   ' for i in range(SZ*4+2)] for j in range(SZ*4+1)]
@@ -41,8 +41,10 @@ def str_board(position, values = []):
 		u = (i+SZ)*2
 		v = j-k+2*SZ
 		grid[v][u] = str(x).rjust(3)
+
+	header = 'Current Player:' + tiles[player] + (' Position Value:' + str(my_value) if my_value is not None else '')
 	
-	return '\n'.join([tiles[player]] + [''.join(x) for x in grid])
+	return '\n'.join([header] + [''.join(x) for x in grid])
 
 def subtract(x, y):
 	return (x[0]-y[0], x[1]-y[1], x[2]-y[2])
@@ -189,12 +191,14 @@ value_dict = {}
 
 import pickle
 
-def read_dict():
+def read_dict(path = 'bug_83_.pickle'):
 	global value_dict
-	with open('bug_83_.pickle', 'rb') as handle:
+	with open(path, 'rb') as handle:
 		value_dict = pickle.load(handle)
 
-# read_dict()
+from os import path
+if path.exists("bug_51148504_.pickle"):
+	read_dict("bug_51148504_.pickle")
 
 def write_dict():
 	global value_dict
@@ -261,12 +265,12 @@ def simulate(position, p1_god = True, p2_god = True):
 	child_vals = []
 	for p, pos in childs:
 		child_vals.append((evaluate_position(pos), p))
-	print (str_board(position, child_vals))
+	print (str_board(position, child_vals, evaluate_position(position)))
 	if not child_vals:
 		return
 	is_god = p1_god if player == 1 else p2_god
 	if not is_god:
-		simulate(random.choice(childs)[0], p1_god, p2_god)
+		simulate(random.choice(childs)[1], p1_god, p2_god)
 	else:
 		best_val = get_best_val(child_vals, player)
 		best_moves = [x[1] for x in child_vals if x[0] == best_val]
@@ -278,13 +282,14 @@ def simulate(position, p1_god = True, p2_god = True):
 print(evaluate_position((1, [0]*N)))
 
 
-write_dict()
+# write_dict()
 
 
+simulate((1, [0]*N), True, True)
+print ('----')
 
-# simulate((1, [0]*N), True, True)
+simulate((1, [0]*N), True, False)
+print ('----')
 
-'''
-for c in children((1, [0]*N)):
-	print (canonical_position(c[1]))
-'''
+simulate((1, [0]*N), False, True)
+print ('----')
